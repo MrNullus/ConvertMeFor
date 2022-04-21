@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>ConvertMeFor</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--==== link for css ====-->
+        <link rel="stylesheet" href="./assets/css/style.css">
+    </head>
+    <body>
+        <div class="page">
+            <header class="page__header">
+                <h1 class="logo-header">ConvertMeFor</h1>
+            </header>
+
+            <main class="app">
+                <aside class="app__sideinfo">
+                    <div class="content">
+                        <h2>Como usar</h2>
+
+                        <ul>
+                            <li>Digite o valor do dado</li>
+                            <li>Depois selecione qual o tipo de unidade de armazenamento</li>
+                            <li>Aperte em Converter!</li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="wrraper">
+                    <section class="app__input">
+                        <form action="post">
+                            <div class="row">
+                                <div>
+                                    <input type="number" id="initialData" name="initialData"/>
+                                </div>
+
+                                <select name="nameStorageOptions" id="nameStorageOptions-ini">
+                                    <option value="KB">KB</option>
+                                    <option value="MB">MB</option>
+                                    <option value="GB" selected>GB</option>
+                                    <option value="TB">TB</option>
+                                </select>
+                            </div>
+
+                            <div class="row sr-info"><h4>Para</h4></div>
+
+                            <div class="row">
+                                <div>
+                                    <input disabled type="number" id="finalData" name="finalData"/>
+                                </div>
+
+                                <select name="nameStorageOptions" id="nameStorageOptions-fin">
+                                    <option value="KB">KB</option>
+                                    <option value="MB" selected>MB</option>
+                                    <option value="GB">GB</option>
+                                    <option value="TB">TB</option>
+                                </select>
+                            </div>
+                        </form>
+                        <button class="btn btn-convert">Converter</button>
+
+                    </section>
+
+                    <section class="app__output">
+                        <!-- todo output application -->
+                    </section>
+                </div>
+            </main>
+
+            <footer class="page__footer">
+                <h5 class="logo-footer">ConvertMeFor</h5>
+            </footer>
+        </div>
+        
+        <!--==== script to app.js ====-->
+        <script src="./src/app.js" async defer></script>
+    </body>
+</html>
